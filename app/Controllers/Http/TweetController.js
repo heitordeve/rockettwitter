@@ -23,7 +23,7 @@ class TweetController {
    */
   async index () {
     const tweets = await Tweet.query()
-      .with('user')
+      .with("user")
       .fetch();
 
     return tweets;
